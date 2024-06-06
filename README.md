@@ -89,8 +89,8 @@ a simple camera that take picture when the button (on GPIO14) is pressed, the re
 
 
 ### Build
-GPIO14 -> button
-(VCC+10k resistor) & GND -> button
+<p>GPIO14 -> button</p>
+<p>(VCC+10k resistor) & GND -> button</p>
 
 <!-- 
 * [![Next][Next.js]][Next-url]
@@ -121,16 +121,17 @@ Download and install the software and library
 
 List of Software and Library used.
 
-#### Software
-ArduinoIDE ver 2.3.2
+#### --> Software
+<p>ArduinoIDE ver 2.3.2</p>
+<p> </p>
 
-#### Library
-"sd_read_write.h" [included in this repo]
-"SD_MMC.h" [included in this repo]
-"esp_camera.h" [included in this repo]
-"soc/rtc_cntl_reg.h" [included in esp_camera.h]
-"driver/rtc_io.h" [included in esp_camera.h]
-
+#### --> Library
+<p>Library "sd_read_write.h" [included in "libraries_esp32.zip"]</p>
+<p>Library "SD_MMC.h" [included in "libraries_esp32.zip"]</p>
+<p>Library "esp_camera.h" [included in "libraries_esp32.zip"]</p>
+<p>Library "soc/rtc_cntl_reg.h" [included in "libraries_esp32.zip"]</p>
+<p>Library "driver/rtc_io.h" [included in "libraries_esp32.zip"]</p>
+<p> </p>
 
 ### Installation
 
@@ -140,10 +141,15 @@ After assemble the board and button
 3. In File -> Preferences -> Additional board manager URLs -> put "https://dl.espressif.com/dl/package_esp32_index.json"
 4. Open the file "ESP32S3_IPHcam_Upgrade"
 5. Set Board Library, Upload Setting to be as listed
-   
-#### Board Library 
-esp32 by Espressif Systems [ver 2.0.10]
-#### Upload Setting 
+<ul>
+    <li>
+      <a>Board Library </a>
+      <p>esp32 by Espressif Systems [ver 2.0.10]</p> 
+    </li>
+    <li>
+      <a>Upload Setting  </a>
+    </li>
+      
 ```
 Choose Board : ESP32S3 Dev Module
 USB CDC On Boot : "Disable"
@@ -162,7 +168,9 @@ PSRAM: "OPI PSRAM" //must enable for better photo quality
 Upload Mode: "UARTO / Hardware CDC*
 Upload Speed: "921600"
 USB Mode: "Hardware CDC and TAG"
-```   
+```
+</ul>
+
 6. click Verify
 7. click Upload //upload file to ESP32S3
 8. Wait for upload success message
